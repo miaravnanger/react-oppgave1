@@ -69,4 +69,18 @@ export const menu = [
     ingredienser: "Entrecôte, asparges, poteter, peppersaus",
     kategori: "Hovedrett",
   },
+  {
+  id: 11,
+  tittel: "Kylling i Pesto",
+  pris: "239 kr",
+  ingredienser: "Kyllingfilet, pesto, cherrytomater, mozzarella, basilikum",
+  kategori: "Hovedrett"
+},
+{
+  id: 12,
+  tittel: "Sitronfromasj",
+  pris: "109 kr",
+  ingredienser: "Sitron, kremfløte, gelatin, sukker, kjekscrumble",
+  kategori: "Dessert"
+}
 ];
