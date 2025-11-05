@@ -1,93 +1,21 @@
 import "./App.css";
-import Menu from "./component/Menu.jsx";
-import Dish from "./component/Dish.jsx";
-function App() {
+import { menu } from "./Data.js";
+import Menu from "./Components/Menu.jsx";
 
-  const meny = [
-    {
-      id: 1,
-      tittel: "Spaghetti Bolognese",
-      pris: "159 kr",
-      ingredienser: "Spaghetti, kjøttsaus, parmesan",
-      kategori: "Hovedrett",
-    },
-    {
-      id: 2,
-      tittel: "Kremet Kyllingsuppe",
-      pris: "129 kr",
-      ingredienser: "Kylling, fløte, gulrøtter, selleri",
-      kategori: "Forrett",
-    },
-    {
-      id: 3,
-      tittel: "Margarita Pizza",
-      pris: "169 kr",
-      ingredienser: "Tomatsaus, mozzarella, basilikum",
-      kategori: "Hovedrett",
-    },
-    {
-      id: 4,
-      tittel: "Sushi Mix",
-      pris: "229 kr",
-      ingredienser: "Laks, tunfisk, reker, ris",
-      kategori: "Hovedrett",
-    },
-    {
-      id: 5,
-      tittel: "Cæsarsalat",
-      pris: "139 kr",
-      ingredienser: "Romanosalat, kylling, parmesan, dressing",
-      kategori: "Forrett",
-    },
-    {
-      id: 6,
-      tittel: "Brownie med Is",
-      pris: "89 kr",
-      ingredienser: "Brownie, vaniljeis, sjokoladesaus",
-      kategori: "Dessert",
-    },
-    {
-      id: 7,
-      tittel: "Taco Tallerken",
-      pris: "199 kr",
-      ingredienser: "Kjøttdeig, mais, ost, guacamole",
-      kategori: "Hovedrett",
-    },
-    {
-      id: 8,
-      tittel: "Pannekaker med Syltetøy",
-      pris: "99 kr",
-      ingredienser: "Pannekaker, jordbærsyltetøy, sukker",
-      kategori: "Dessert",
-    },
-    {
-      id: 9,
-      tittel: "Reker med Sitron",
-      pris: "149 kr",
-      ingredienser: "Reker, sitron, dill, brød",
-      kategori: "Forrett",
-    },
-    {
-      id: 10,
-      tittel: "Entrecôte med Grønnsaker",
-      pris: "289 kr",
-      ingredienser: "Entrecôte, asparges, poteter, peppersaus",
-      kategori: "Hovedrett",
-    },
-  ];
-
-// const foods = meny.map((items) => items.tittel);
-// console.log(foods)
+export default function App() {
+  const Appetizer = menu.filter((dish) => dish.kategori === "Forrett");
+  const MainCourse = menu.filter((dish) => dish.kategori === "Hovedrett");
+  const Dessert = menu.filter((dish) => dish.kategori === "Dessert");
 
   return (
     <div>
-    {meny.map( item => {
-      return <Menu {...item}/>,
-      <Dish {...item}/>
-    })}
+      <h1>Restaurantmeny</h1>
+      <h2>Forretter</h2>
+      <Menu dishes={Appetizer} />
+      <h2>Hovedretter</h2>
+      <Menu dishes={MainCourse} />
+      <h2>Dessert</h2>
+      <Menu dishes={Dessert} />
     </div>
-    
   );
 }
-
-export default App;
