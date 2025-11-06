@@ -77,10 +77,10 @@ export const menu = [
   kategori: "Hovedrett"
 },
 {
-  id: 12,
-  tittel: "Sitronfromasj",
-  pris: "109 kr",
-  ingredienser: "Sitron, kremfløte, gelatin, sukker, kjekscrumble",
-  kategori: "Dessert"
+  id: 13,
+  tittel: "Carpaccio av Okse",
+  pris: "169 kr",
+  ingredienser: "Tynnskåret oksefilet, parmesan, ruccola, olivenolje, pinekjerner",
+  kategori: "Forrett"
 }
 ];
