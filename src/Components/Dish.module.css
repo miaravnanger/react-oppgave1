@@ -1,9 +1,9 @@
 .card{
     border: 1px solid #ddd;
-    gap: 3rem;
     background: url(./images/lighttexture.jpg);
     color: black;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
 }
 
 .card h3{
@@ -14,4 +14,22 @@
     font-size: 0.85rem;
     opacity: 0.6;
     margin-top: 1rem;
+}
+.header h3{
+    margin: 0;
+}
+.header{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: auto;
 }
