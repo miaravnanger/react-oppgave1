@@ -8,7 +8,7 @@ export default function App() {
   const Dessert = menu.filter((dish) => dish.kategori === "Dessert");
 
   return (
-    <div>
+    <div className="menu-container">
       <h1>Restaurantmeny</h1>
       <h2>Forretter</h2>
       <Menu dishes={Appetizer} />

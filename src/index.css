@@ -5,10 +5,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: url(./Components/images/stonetexture2.jpg);
+  background: url(./Components/images/stone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

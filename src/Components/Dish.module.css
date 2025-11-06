@@ -1,17 +1,17 @@
 .card{
     border: 1px solid #ddd;
-    padding: 14px;
+    gap: 3rem;
     background: url(./images/lighttexture.jpg);
     color: black;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .card h3{
-    margin-top: 0;
+    margin-top: 2rem;
 }
 
 .kategori {
     font-size: 0.85rem;
     opacity: 0.6;
-    margin-top: 10px;
+    margin-top: 1rem;
 }

@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.menu-container{
+  background: url(./Components/images/stonetexture2.jpg);
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
