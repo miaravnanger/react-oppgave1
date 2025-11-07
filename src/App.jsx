@@ -10,12 +10,18 @@ export default function App() {
   return (
     <div className="menu-container">
       <h1>Restaurantmeny</h1>
-      <h2>Forretter</h2>
-      <Menu dishes={Appetizer} />
-      <h2>Hovedretter</h2>
-      <Menu dishes={MainCourse} />
-      <h2>Dessert</h2>
-      <Menu dishes={Dessert} />
+      <h2 className="section-title">Forretter</h2>
+      <div className="category">
+        <Menu dishes={Appetizer} />
+      </div>
+      <h2 className="section-title">Hovedretter</h2>
+      <div className="category">
+        <Menu dishes={MainCourse} />
+      </div>
+      <h2 className="section-title">Dessert</h2>
+      <div className="category">
+        <Menu dishes={Dessert} />
+      </div>
     </div>
   );
 }
