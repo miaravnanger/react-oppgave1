@@ -1,7 +1,7 @@
 import "./App.css";
 import { menu } from "./Data.js";
 import Menu from "./Components/Menu.jsx";
-import menuLine from  "./Components/images/menu-line.png"
+import menuLine from  "./Components/images/frame-3.png"
 
 
 export default function App() {
@@ -12,12 +12,12 @@ export default function App() {
   return (
     <div className="menu-container">
       <h1>Restaurantmeny</h1>
-      <h2 className="section-title">Forretter</h2>
+      <h2 className="section-title">Forrett</h2>
       <img src={menuLine} alt="a dotted line" className="menu-divider" />
       <div className="category">
         <Menu dishes={Appetizer} />
       </div>
-      <h2 className="section-title">Hovedretter</h2>
+      <h2 className="section-title">Hovedrett</h2>
       <img src={menuLine} alt="a dotted line" className="menu-divider" />
       <div className="category">
         <Menu dishes={MainCourse} />

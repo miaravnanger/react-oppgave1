@@ -3,9 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  background: url(./Components/images/stonetexture2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(23, 20, 20);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -65,4 +63,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@font-face {
+  font-family: Libre;
+  src: url(./Components/Fonts/LibreCaslonDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(./Components/Fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: CrimsonItalic;
+  src: url(./Components/Fonts/CrimsonText-Italic.ttf);
 }

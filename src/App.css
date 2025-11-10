@@ -39,18 +39,22 @@
 
 .menu-container{
   background: url(./Components/images/menu-background.png);
+  border-radius: 10px;
+  border: 1px solid #C1C2A4;
+  box-shadow: 0 1px 4px #C1C2A4;
   padding-top: 2rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  color: #C1C2A4
-  
+  color: #eef0bc;
+  font-family: Libre, Arial, Helvetica, sans-serif;
 }
 
 .section-title {
   display: inline-block;  
   padding-top: 1rem;
   text-align: center;
+    font-size: 2rem;
 }
 
 .category{
@@ -62,6 +66,6 @@
 .menu-divider{
   display:block;
   margin: 10px auto;
-  width: 170px;
+  width: 250px;
 
 }
