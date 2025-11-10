@@ -1,6 +1,8 @@
 import "./App.css";
 import { menu } from "./Data.js";
 import Menu from "./Components/Menu.jsx";
+import menuLine from  "./Components/images/menu-line.png"
+
 
 export default function App() {
   const Appetizer = menu.filter((dish) => dish.kategori === "Forrett");
@@ -11,14 +13,17 @@ export default function App() {
     <div className="menu-container">
       <h1>Restaurantmeny</h1>
       <h2 className="section-title">Forretter</h2>
+      <img src={menuLine} alt="a dotted line" className="menu-divider" />
       <div className="category">
         <Menu dishes={Appetizer} />
       </div>
       <h2 className="section-title">Hovedretter</h2>
+      <img src={menuLine} alt="a dotted line" className="menu-divider" />
       <div className="category">
         <Menu dishes={MainCourse} />
       </div>
       <h2 className="section-title">Dessert</h2>
+      <img src={menuLine} alt="a dotted line" className="menu-divider" />
       <div className="category">
         <Menu dishes={Dessert} />
       </div>
