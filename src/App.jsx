@@ -1,8 +1,7 @@
 import "./App.css";
-import { menu } from "./Data.js";
+import { menu } from "./Components/Data.js";
 import Menu from "./Components/Menu.jsx";
-import menuLine from  "./Components/images/frame-3.png"
-
+import menuLine from "./Components/images/menu-line.png";
 
 export default function App() {
   const Appetizer = menu.filter((dish) => dish.kategori === "Forrett");
